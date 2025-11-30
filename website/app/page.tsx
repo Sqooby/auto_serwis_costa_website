@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,8 +10,9 @@ export default function Home() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(/hero-background.jpg)',
-              filter: 'brightness(0.4) contrast(1.1)',
+              backgroundImage:
+                "url(/images/muscular-car-service-worker-repairing-vehicle.jpg)",
+              filter: "brightness(0.4) contrast(1.1)",
             }}
           />
           {/* Gradient Overlays for Depth */}
@@ -20,19 +21,28 @@ export default function Home() {
 
           {/* Technical Grid Pattern */}
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0" style={{
-              backgroundImage: `
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: `
                 linear-gradient(rgba(52, 152, 219, 0.3) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(52, 152, 219, 0.3) 1px, transparent 1px)
               `,
-              backgroundSize: '60px 60px',
-            }} />
+                backgroundSize: "60px 60px",
+              }}
+            />
           </div>
 
           {/* Diagonal Accent Lines - Technical Precision */}
           <div className="absolute top-0 right-0 w-full h-full overflow-hidden">
-            <div className="absolute top-20 -right-32 w-96 h-1 bg-gradient-to-r from-transparent via-costa-blue to-transparent transform rotate-45 animate-pulse" style={{ animationDuration: '3s' }} />
-            <div className="absolute top-40 -right-20 w-80 h-0.5 bg-gradient-to-r from-transparent via-costa-turquoise/50 to-transparent transform rotate-45" style={{ animationDelay: '1s' }} />
+            <div
+              className="absolute top-20 -right-32 w-96 h-1 bg-gradient-to-r from-transparent via-costa-blue to-transparent transform rotate-45 animate-pulse"
+              style={{ animationDuration: "3s" }}
+            />
+            <div
+              className="absolute top-40 -right-20 w-80 h-0.5 bg-gradient-to-r from-transparent via-costa-turquoise/50 to-transparent transform rotate-45"
+              style={{ animationDelay: "1s" }}
+            />
           </div>
         </div>
 
@@ -45,13 +55,20 @@ export default function Home() {
                 {/* Premium Badge */}
                 <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full border border-white/20 animate-fade-in">
                   <div className="flex gap-0.5">
-                    {[1,2,3,4,5].map((star) => (
-                      <svg key={star} className="w-5 h-5 text-yellow-400 fill-current animate-star-pulse" style={{ animationDelay: `${star * 0.1}s` }} viewBox="0 0 20 20">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <svg
+                        key={star}
+                        className="w-5 h-5 text-yellow-400 fill-current animate-star-pulse"
+                        style={{ animationDelay: `${star * 0.1}s` }}
+                        viewBox="0 0 20 20"
+                      >
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     ))}
                   </div>
-                  <span className="text-white font-heading font-bold text-lg">4.8</span>
+                  <span className="text-white font-heading font-bold text-lg">
+                    4.8
+                  </span>
                   <span className="text-white/80 text-sm">55 opinii</span>
                 </div>
 
@@ -62,7 +79,10 @@ export default function Home() {
                     <span>PROFESSIONAL AUTO CARE</span>
                   </div>
 
-                  <h1 className="font-heading font-bold leading-tight animate-slide-in-left" style={{ animationDelay: '0.2s' }}>
+                  <h1
+                    className="font-heading font-bold leading-tight animate-slide-in-left"
+                    style={{ animationDelay: "0.2s" }}
+                  >
                     <span className="block text-5xl md:text-6xl lg:text-7xl text-white mb-2">
                       AUTO SERVICE
                     </span>
@@ -74,32 +94,67 @@ export default function Home() {
                     </span>
                   </h1>
 
-                  <div className="flex items-center gap-3 text-white/60 font-mono text-sm tracking-wider animate-slide-in-left" style={{ animationDelay: '0.4s' }}>
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                  <div
+                    className="flex items-center gap-3 text-white/60 font-mono text-sm tracking-wider animate-slide-in-left"
+                    style={{ animationDelay: "0.4s" }}
+                  >
+                    <svg
+                      className="w-4 h-4"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                        clipRule="evenodd"
+                      />
                     </svg>
                     <span>RZESZÓW, WANDY SIEMASZKOWEJ 9</span>
                   </div>
                 </div>
 
                 {/* Trust Statement */}
-                <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl animate-fade-in" style={{ animationDelay: '0.6s' }}>
-                  Zaufany warsztat mechaniczny z{' '}
-                  <span className="text-costa-turquoise font-bold">fachową diagnostyką</span>,{' '}
-                  <span className="text-costa-turquoise font-bold">uczciwymi cenami</span> i{' '}
-                  <span className="text-costa-turquoise font-bold">perfekcyjną obsługą</span>
+                <p
+                  className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl animate-fade-in"
+                  style={{ animationDelay: "0.6s" }}
+                >
+                  Zaufany warsztat mechaniczny z{" "}
+                  <span className="text-costa-turquoise font-bold">
+                    fachową diagnostyką
+                  </span>
+                  ,{" "}
+                  <span className="text-costa-turquoise font-bold">
+                    uczciwymi cenami
+                  </span>{" "}
+                  i{" "}
+                  <span className="text-costa-turquoise font-bold">
+                    perfekcyjną obsługą
+                  </span>
                 </p>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-up" style={{ animationDelay: '0.8s' }}>
+                <div
+                  className="flex flex-col sm:flex-row gap-4 animate-slide-in-up"
+                  style={{ animationDelay: "0.8s" }}
+                >
                   <a
                     href="tel:+48880378675"
                     className="group relative px-8 py-4 bg-gradient-to-r from-costa-green to-green-600 text-white font-heading font-bold text-lg rounded-lg overflow-hidden shadow-2xl hover:shadow-costa-green/50 transition-all duration-300 transform hover:-translate-y-1"
                   >
                     <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                     <div className="relative flex items-center justify-center gap-3">
-                      <svg className="w-6 h-6 animate-phone-ring" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      <svg
+                        className="w-6 h-6 animate-phone-ring"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                        />
                       </svg>
                       <span>880 378 675</span>
                     </div>
@@ -111,8 +166,18 @@ export default function Home() {
                   >
                     <div className="flex items-center justify-center gap-3">
                       <span>UMÓW WIZYTĘ</span>
-                      <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      <svg
+                        className="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
                       </svg>
                     </div>
                   </Link>
@@ -120,26 +185,76 @@ export default function Home() {
 
                 {/* Scroll Indicator */}
                 <div className="pt-8 animate-bounce-slow">
-                  <a href="#why-choose-us" className="inline-flex flex-col items-center gap-2 text-white/60 hover:text-costa-blue transition-colors group">
-                    <span className="text-xs font-mono tracking-wider">PRZEWIŃ W DÓŁ</span>
-                    <svg className="w-6 h-6 transform group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  <a
+                    href="#why-choose-us"
+                    className="inline-flex flex-col items-center gap-2 text-white/60 hover:text-costa-blue transition-colors group"
+                  >
+                    <span className="text-xs font-mono tracking-wider">
+                      PRZEWIŃ W DÓŁ
+                    </span>
+                    <svg
+                      className="w-6 h-6 transform group-hover:translate-y-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                      />
                     </svg>
                   </a>
                 </div>
               </div>
 
-              {/* Right Side - Feature Highlights */}
+              {/* Right Side - Feature Highlights with Image */}
               <div className="lg:col-span-5 space-y-4 animate-slide-in-right">
+                {/* Featured Workshop Image */}
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 group mb-6">
+                  <div className="relative h-64">
+                    <div
+                      className="absolute inset-0 bg-cover bg-center transform group-hover:scale-105 transition-transform duration-700"
+                      style={{
+                        backgroundImage:
+                          "url(/images/happy-auto-repairman-his-colleague-communicating-while-working-together-workshop.jpg)",
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                      <p className="text-white font-heading font-bold text-lg">
+                        Profesjonalny Zespół
+                      </p>
+                      <p className="text-white/80 text-sm">
+                        Doświadczenie i pasja w każdym działaniu
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Feature Cards */}
                 {[
-                  { icon: '🔧', title: 'Fachowa Diagnostyka', desc: 'Nowoczesny sprzęt' },
-                  { icon: '❄️', title: 'Serwis Klimatyzacji', desc: 'Wszystkie typy gazów' },
-                  { icon: '✓', title: 'Uczciwe Ceny', desc: 'Bez ukrytych kosztów' },
+                  {
+                    icon: "🔧",
+                    title: "Fachowa Diagnostyka",
+                    desc: "Nowoczesny sprzęt",
+                  },
+                  {
+                    icon: "❄️",
+                    title: "Serwis Klimatyzacji",
+                    desc: "Wszystkie typy gazów",
+                  },
+                  {
+                    icon: "✓",
+                    title: "Uczciwe Ceny",
+                    desc: "Bez ukrytych kosztów",
+                  },
                 ].map((feature, index) => (
                   <div
                     key={index}
                     className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 hover:bg-white/10 hover:border-costa-blue/50 transition-all duration-300 transform hover:translate-x-2"
-                    style={{ animationDelay: `${1 + index * 0.2}s` }}
+                    style={{ animationDelay: `${1.2 + index * 0.2}s` }}
                   >
                     <div className="flex items-center gap-4">
                       <div className="text-4xl transform group-hover:scale-110 transition-transform">
@@ -149,9 +264,7 @@ export default function Home() {
                         <h3 className="text-white font-heading font-bold text-lg mb-1">
                           {feature.title}
                         </h3>
-                        <p className="text-white/70 text-sm">
-                          {feature.desc}
-                        </p>
+                        <p className="text-white/70 text-sm">{feature.desc}</p>
                       </div>
                     </div>
                   </div>
@@ -166,21 +279,38 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section - Redesigned */}
-      <section id="why-choose-us" className="relative section-padding bg-gradient-to-br from-light-gray via-white to-light-gray overflow-hidden">
+      <section
+        id="why-choose-us"
+        className="relative section-padding bg-gradient-to-br from-light-gray via-white to-light-gray overflow-hidden"
+      >
         {/* Background Decorative Elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-costa-blue/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-costa-turquoise/5 rounded-full blur-3xl" />
+
+        {/* Background Image - Subtle */}
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/3 h-2/3 opacity-5">
+          <div
+            className="w-full h-full bg-cover bg-center"
+            style={{
+              backgroundImage:
+                "url(/images/happy-auto-repairman-his-colleague-communicating-while-working-together-workshop.jpg)",
+            }}
+          />
+        </div>
 
         <div className="container-custom mx-auto relative z-10">
           {/* Section Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-3 mb-4">
               <div className="w-12 h-px bg-costa-blue" />
-              <span className="text-costa-blue font-mono text-sm tracking-wider uppercase">Zaufanie Naszych Klientów</span>
+              <span className="text-costa-blue font-mono text-sm tracking-wider uppercase">
+                Zaufanie Naszych Klientów
+              </span>
               <div className="w-12 h-px bg-costa-blue" />
             </div>
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-navy">
-              Dlaczego Klienci Wybierają <span className="text-costa-blue">COSTA</span>
+              Dlaczego Klienci Wybierają{" "}
+              <span className="text-costa-blue">COSTA</span>
             </h2>
             <p className="text-xl text-navy/70 max-w-2xl mx-auto">
               Prawdziwe opinie od prawdziwych klientów
@@ -192,47 +322,104 @@ export default function Home() {
             {[
               {
                 icon: (
-                  <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  <svg
+                    className="w-full h-full"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
                   </svg>
                 ),
-                title: 'Uczciwa i Rzetelna Obsługa',
-                quote: 'Nie zawyża kosztów, wszystko jasno wytłumaczy.',
-                features: ['Bez ukrytych opłat', 'Przejrzyste ceny', 'Jasna komunikacja'],
-                color: 'costa-blue',
+                title: "Uczciwa i Rzetelna Obsługa",
+                quote: "Nie zawyża kosztów, wszystko jasno wytłumaczy.",
+                features: [
+                  "Bez ukrytych opłat",
+                  "Przejrzyste ceny",
+                  "Jasna komunikacja",
+                ],
+                color: "costa-blue",
               },
               {
                 icon: (
-                  <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  <svg
+                    className="w-full h-full"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
                   </svg>
                 ),
-                title: 'Fachowa Diagnostyka',
-                quote: 'Jedyny mechanik, który prawidłowo zdiagnozował problem.',
-                features: ['Nowoczesny sprzęt', 'Trafna diagnoza', 'Rozwiązanie za 1 razem'],
-                color: 'costa-turquoise',
+                title: "Fachowa Diagnostyka",
+                quote:
+                  "Jedyny mechanik, który prawidłowo zdiagnozował problem.",
+                features: [
+                  "Nowoczesny sprzęt",
+                  "Trafna diagnoza",
+                  "Rozwiązanie za 1 razem",
+                ],
+                color: "costa-turquoise",
               },
               {
                 icon: (
-                  <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                  <svg
+                    className="w-full h-full"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    />
                   </svg>
                 ),
-                title: 'Perfekcyjna Jakość',
-                quote: 'Wszystko solidnie, perfekcyjnie i na czas.',
-                features: ['Dbałość o szczegóły', 'Wysoka jakość', 'Terminowość'],
-                color: 'yellow-500',
+                title: "Perfekcyjna Jakość",
+                quote: "Wszystko solidnie, perfekcyjnie i na czas.",
+                features: [
+                  "Dbałość o szczegóły",
+                  "Wysoka jakość",
+                  "Terminowość",
+                ],
+                color: "yellow-500",
               },
               {
                 icon: (
-                  <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  <svg
+                    className="w-full h-full"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
                   </svg>
                 ),
-                title: 'Wyjątkowa Obsługa',
-                quote: 'Wyjątkowe podejście do klienta za każdym razem.',
-                features: ['Przyjazna obsługa', 'Profesjonalizm', 'Klient na 1 miejscu'],
-                color: 'costa-green',
+                title: "Wyjątkowa Obsługa",
+                quote: "Wyjątkowe podejście do klienta za każdym razem.",
+                features: [
+                  "Przyjazna obsługa",
+                  "Profesjonalizm",
+                  "Klient na 1 miejscu",
+                ],
+                color: "costa-green",
               },
             ].map((card, index) => (
               <div
@@ -240,10 +427,14 @@ export default function Home() {
                 className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 border-transparent hover:border-costa-blue/30"
               >
                 {/* Colored Background Accent */}
-                <div className={`absolute top-0 right-0 w-32 h-32 bg-${card.color}/10 rounded-full blur-2xl transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-500`} />
+                <div
+                  className={`absolute top-0 right-0 w-32 h-32 bg-${card.color}/10 rounded-full blur-2xl transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-500`}
+                />
 
                 {/* Icon */}
-                <div className={`relative w-16 h-16 mb-6 text-${card.color} transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
+                <div
+                  className={`relative w-16 h-16 mb-6 text-${card.color} transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}
+                >
                   {card.icon}
                 </div>
 
@@ -260,9 +451,20 @@ export default function Home() {
                 {/* Features */}
                 <ul className="space-y-2 relative">
                   {card.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-sm text-navy/80">
-                      <svg className={`w-4 h-4 flex-shrink-0 text-${card.color}`} fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    <li
+                      key={idx}
+                      className="flex items-center gap-2 text-sm text-navy/80"
+                    >
+                      <svg
+                        className={`w-4 h-4 flex-shrink-0 text-${card.color}`}
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
                       </svg>
                       <span>{feature}</span>
                     </li>
@@ -272,9 +474,108 @@ export default function Home() {
                 {/* Decorative Corner Element */}
                 <div className="absolute bottom-0 right-0 w-20 h-20 opacity-5 transform translate-x-4 translate-y-4">
                   <svg viewBox="0 0 100 100" className="w-full h-full">
-                    <circle cx="50" cy="50" r="40" fill="currentColor" className={`text-${card.color}`} />
+                    <circle
+                      cx="50"
+                      cy="50"
+                      r="40"
+                      fill="currentColor"
+                      className={`text-${card.color}`}
+                    />
                   </svg>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Workshop Gallery Section */}
+      <section className="relative section-padding bg-white overflow-hidden">
+        <div className="container-custom mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-3 mb-4">
+              <div className="w-12 h-px bg-costa-blue" />
+              <span className="text-costa-blue font-mono text-sm tracking-wider uppercase">
+                Nasz Warsztat
+              </span>
+              <div className="w-12 h-px bg-costa-blue" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-navy">
+              Profesjonalne Zaplecze{" "}
+              <span className="text-costa-blue">Techniczne</span>
+            </h2>
+            <p className="text-xl text-navy/70 max-w-2xl mx-auto">
+              Nowoczesny sprzęt i doświadczony zespół - gwarancja najwyższej
+              jakości usług
+            </p>
+          </div>
+
+          {/* Gallery Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                image:
+                  "/images/happy-auto-repairman-his-colleague-communicating-while-working-together-workshop.jpg",
+                title: "Doświadczony Zespół",
+                desc: "Fachowcy z pasją do motoryzacji",
+              },
+              {
+                image: "/images/erik-mclean-hEELt_9YdiU-unsplash.jpg",
+                title: "Nowoczesny Sprzęt",
+                desc: "Najnowsze technologie diagnostyczne",
+              },
+              {
+                image: "/images/pexels-avinashpatel-445399.jpg",
+                title: "Dbałość o Szczegóły",
+                desc: "Perfekcja w każdym działaniu",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+              >
+                {/* Image */}
+                <div className="relative h-80 overflow-hidden">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transform group-hover:scale-110 transition-transform duration-700"
+                    style={{
+                      backgroundImage: `url(${item.image})`,
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
+
+                  {/* Content Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                    <h3 className="text-2xl font-heading font-bold text-white mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-white/90 text-sm">{item.desc}</p>
+                  </div>
+
+                  {/* Decorative Border */}
+                  <div className="absolute inset-0 border-4 border-costa-blue/0 group-hover:border-costa-blue/50 transition-all duration-500 rounded-2xl" />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Stats Section */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+            {[
+              { number: "15+", label: "Lat Doświadczenia" },
+              { number: "2000+", label: "Zadowolonych Klientów" },
+              { number: "4.8★", label: "Ocena Google" },
+              { number: "100%", label: "Zaangażowania" },
+            ].map((stat, index) => (
+              <div
+                key={index}
+                className="text-center p-6 bg-gradient-to-br from-light-gray to-white rounded-xl border-2 border-costa-blue/20 hover:border-costa-blue/50 transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <div className="text-4xl md:text-5xl font-heading font-bold text-costa-blue mb-2">
+                  {stat.number}
+                </div>
+                <div className="text-navy/70 font-semibold">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -285,12 +586,15 @@ export default function Home() {
       <section className="relative section-padding bg-navy text-white overflow-hidden">
         {/* Animated Background Pattern */}
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `
               radial-gradient(circle at 2px 2px, rgba(52, 152, 219, 0.5) 1px, transparent 0)
             `,
-            backgroundSize: '40px 40px',
-          }} />
+              backgroundSize: "40px 40px",
+            }}
+          />
         </div>
 
         {/* Diagonal Accent */}
@@ -301,7 +605,9 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-3 mb-4">
               <div className="w-12 h-px bg-costa-blue" />
-              <span className="text-costa-blue font-mono text-sm tracking-wider uppercase">Nasze Kompetencje</span>
+              <span className="text-costa-blue font-mono text-sm tracking-wider uppercase">
+                Nasze Kompetencje
+              </span>
               <div className="w-12 h-px bg-costa-blue" />
             </div>
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
@@ -316,110 +622,130 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {[
               {
-                icon: '❄️',
-                title: 'Serwis Klimatyzacji',
-                desc: 'Profesjonalny serwis klimatyzacji dla wszystkich typów pojazdów',
+                title: "Serwis Klimatyzacji",
+                desc: "Profesjonalny serwis klimatyzacji dla wszystkich typów pojazdów",
+                image:
+                  "/images/car-dashboard-radio-closeup-woman-sets-up-radio-while-driving-car.jpg",
                 features: [
-                  { icon: '🔄', text: 'Uzupełnianie freonu (stary i nowy gaz)' },
-                  { icon: '🔍', text: 'Wykrywanie nieszczelności' },
-                  { icon: '🧼', text: 'Czyszczenie i dezynfekcja' },
-                  { icon: '🔧', text: 'Wymiana sprężarki i podzespołów' },
+                  {
+                    icon: "🔄",
+                    text: "Uzupełnianie freonu (stary i nowy gaz)",
+                  },
+                  { icon: "🔍", text: "Wykrywanie nieszczelności" },
+                  { icon: "🧼", text: "Czyszczenie i dezynfekcja" },
+                  { icon: "🔧", text: "Wymiana sprężarki i podzespołów" },
                 ],
-                link: '/uslugi#klimatyzacja',
-                gradient: 'from-costa-blue to-costa-turquoise',
+                link: "/uslugi#klimatyzacja",
+                gradient: "from-costa-blue to-costa-turquoise",
               },
               {
-                icon: '🔧',
-                title: 'Naprawy Mechaniczne',
-                desc: 'Fachowe naprawy mechaniczne wszystkich marek i modeli',
+                title: "Naprawy Mechaniczne",
+                desc: "Fachowe naprawy mechaniczne wszystkich marek i modeli",
+                image: "/images/car-being-taking-care-workshop.jpg",
                 features: [
-                  { icon: '🔴', text: 'Wymiana klocków i tarcz hamulcowych' },
-                  { icon: '🛢️', text: 'Wymiana oleju i filtrów' },
-                  { icon: '⚡', text: 'Naprawa rozrusznika i alternatora' },
-                  { icon: '🔩', text: 'Regeneracja bendiksa i zawieszenia' },
+                  { icon: "🔴", text: "Wymiana klocków i tarcz hamulcowych" },
+                  { icon: "🛢️", text: "Wymiana oleju i filtrów" },
+                  { icon: "⚡", text: "Naprawa rozrusznika i alternatora" },
+                  { icon: "🔩", text: "Regeneracja bendiksa i zawieszenia" },
                 ],
-                link: '/uslugi#mechanika',
-                gradient: 'from-costa-turquoise to-costa-green',
+                link: "/uslugi#mechanika",
+                gradient: "from-costa-turquoise to-costa-green",
               },
               {
-                icon: '💻',
-                title: 'Diagnostyka Komputerowa',
-                desc: 'Zaawansowana diagnostyka dla wszystkich typów pojazdów',
+                title: "Diagnostyka Komputerowa",
+                desc: "Zaawansowana diagnostyka dla wszystkich typów pojazdów",
+                image: "/images/erik-mclean-hEELt_9YdiU-unsplash.jpg",
                 features: [
-                  { icon: '📡', text: 'Odczyt kodów błędów OBD-II' },
-                  { icon: '🔬', text: 'Analiza systemów pojazdu' },
-                  { icon: '📊', text: 'Testy wydajności' },
-                  { icon: '⚙️', text: 'Identyfikacja usterek' },
+                  { icon: "📡", text: "Odczyt kodów błędów OBD-II" },
+                  { icon: "🔬", text: "Analiza systemów pojazdu" },
+                  { icon: "📊", text: "Testy wydajności" },
+                  { icon: "⚙️", text: "Identyfikacja usterek" },
                 ],
-                link: '/uslugi#diagnostyka',
-                gradient: 'from-yellow-500 to-costa-orange',
+                link: "/uslugi#diagnostyka",
+                gradient: "from-costa-turquoise to-costa-green400",
               },
               {
-                icon: '🛞',
-                title: 'Serwis Opon i Kół',
-                desc: 'Kompleksowa obsługa opon i kół',
+                title: "Serwis Opon i Kół",
+                desc: "Kompleksowa obsługa opon i kół",
+                image: "/images/pexels-maltelu-2244746.jpg",
                 features: [
-                  { icon: '🔄', text: 'Wymiana opon sezonowych' },
-                  { icon: '🆕', text: 'Montaż nowych opon' },
-                  { icon: '⚖️', text: 'Wyważanie kół' },
-                  { icon: '🔧', text: 'Naprawa przebić' },
+                  { icon: "🔄", text: "Wymiana opon sezonowych" },
+                  { icon: "🆕", text: "Montaż nowych opon" },
+                  { icon: "⚖️", text: "Wyważanie kół" },
+                  { icon: "🔧", text: "Naprawa przebić" },
                 ],
-                link: '/uslugi#opony',
-                gradient: 'from-costa-green to-green-600',
+                link: "/uslugi#opony",
+                gradient: "from-costa-green to-green-600",
               },
             ].map((service, index) => (
               <div
                 key={index}
-                className="group relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-costa-blue/50 transition-all duration-500 hover:bg-white/10"
+                className="group relative bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-costa-blue/50 transition-all duration-500 hover:bg-white/10"
               >
                 {/* Gradient Accent */}
-                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${service.gradient} rounded-t-2xl`} />
+                <div
+                  className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${service.gradient} rounded-t-2xl z-10`}
+                />
+
+                {/* Service Image */}
+                <div className="relative h-48 overflow-hidden">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transform group-hover:scale-110 transition-transform duration-700"
+                    style={{
+                      backgroundImage: `url(${service.image})`,
+                      filter: "brightness(0.7) contrast(1.1)",
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
+                </div>
 
                 {/* Content */}
-                <div className="flex items-start gap-6 mb-6">
-                  <div className="text-6xl transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                    {service.icon}
-                  </div>
-                  <div className="flex-1">
+                <div className="p-8">
+                  <div className="mb-6">
                     <h3 className="text-2xl font-heading font-bold mb-2 text-white">
                       {service.title}
                     </h3>
-                    <p className="text-white/70">
-                      {service.desc}
-                    </p>
+                    <p className="text-white/70">{service.desc}</p>
                   </div>
-                </div>
 
-                {/* Features List */}
-                <ul className="space-y-3 mb-8">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-white/90">
-                      <span className="text-2xl">{feature.icon}</span>
-                      <span className="pt-1">{feature.text}</span>
-                    </li>
-                  ))}
-                </ul>
+                  {/* Features List */}
+                  <ul className="space-y-3 mb-8">
+                    {service.features.map((feature, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-start gap-3 text-white/90"
+                      >
+                        <span className="text-2xl">{feature.icon}</span>
+                        <span className="pt-1">{feature.text}</span>
+                      </li>
+                    ))}
+                  </ul>
 
-                {/* CTAs */}
-                <div className="flex gap-3">
-                  <Link
-                    href={service.link}
-                    className="flex-1 text-center px-6 py-3 bg-gradient-to-r from-costa-blue to-costa-turquoise text-white font-heading font-semibold rounded-lg hover:shadow-lg hover:shadow-costa-blue/50 transition-all duration-300 transform hover:-translate-y-0.5"
-                  >
-                    Dowiedz się więcej
-                  </Link>
-                  <a
-                    href="tel:+48880378675"
-                    className="px-6 py-3 border-2 border-white/30 text-white font-heading font-semibold rounded-lg hover:bg-white hover:text-navy transition-all duration-300"
-                  >
-                    Zadzwoń
-                  </a>
+                  {/* CTAs */}
+                  <div className="flex gap-3">
+                    <Link
+                      href={service.link}
+                      className="flex-1 text-center px-6 py-3 bg-gradient-to-r from-costa-blue to-costa-turquoise text-white font-heading font-semibold rounded-lg hover:shadow-lg hover:shadow-costa-blue/50 transition-all duration-300 transform hover:-translate-y-0.5"
+                    >
+                      Dowiedz się więcej
+                    </Link>
+                    <a
+                      href="tel:+48880378675"
+                      className="px-6 py-3 border-2 border-white/30 text-white font-heading font-semibold rounded-lg hover:bg-white hover:text-navy transition-all duration-300"
+                    >
+                      Zadzwoń
+                    </a>
+                  </div>
                 </div>
 
                 {/* Decorative Corner */}
                 <div className="absolute bottom-4 right-4 w-24 h-24 opacity-5">
                   <svg viewBox="0 0 100 100" className="w-full h-full">
-                    <path d="M0,100 L100,0 L100,100 Z" fill="currentColor" className="text-white" />
+                    <path
+                      d="M0,100 L100,0 L100,100 Z"
+                      fill="currentColor"
+                      className="text-white"
+                    />
                   </svg>
                 </div>
               </div>
@@ -442,7 +768,9 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-3 mb-4">
               <div className="w-12 h-px bg-costa-blue" />
-              <span className="text-costa-blue font-mono text-sm tracking-wider uppercase">Opinie Klientów</span>
+              <span className="text-costa-blue font-mono text-sm tracking-wider uppercase">
+                Opinie Klientów
+              </span>
               <div className="w-12 h-px bg-costa-blue" />
             </div>
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-navy">
@@ -452,15 +780,23 @@ export default function Home() {
             {/* Rating Summary */}
             <div className="inline-flex flex-col items-center gap-3 bg-white rounded-2xl shadow-xl p-8 border-2 border-costa-blue/20">
               <div className="flex gap-1">
-                {[1,2,3,4,5].map((star) => (
-                  <svg key={star} className="w-8 h-8 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <svg
+                    key={star}
+                    className="w-8 h-8 text-yellow-400 fill-current"
+                    viewBox="0 0 20 20"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
               </div>
               <div className="text-center">
-                <div className="text-4xl font-heading font-bold text-navy mb-1">4.8 / 5.0</div>
-                <div className="text-navy/60">Na podstawie 55 opinii Google</div>
+                <div className="text-4xl font-heading font-bold text-navy mb-1">
+                  4.8 / 5.0
+                </div>
+                <div className="text-navy/60">
+                  Na podstawie 55 opinii Google
+                </div>
               </div>
             </div>
           </div>
@@ -468,12 +804,36 @@ export default function Home() {
           {/* Reviews Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {[
-              { name: 'Patryk Betlej', text: 'Gorąco polecam! Wymiana hamulców, wymiana oleju, naprawa rozrusznika - wszystko wykonane perfekcyjnie.', rating: 5 },
-              { name: 'Łucja Hadam', text: 'Wreszcie mechanik, któremu mogę zaufać. Trafna diagnoza, żadnych niepotrzebnych kosztów.', rating: 5 },
-              { name: 'Mariusz Jucha', text: 'Perfekcyjnie i na czas. Najlepsze podejście do klienta, jakie kiedykolwiek doświadczyłem.', rating: 5 },
-              { name: 'Sylwester Nowak', text: 'Bardzo dobra, szybka i profesjonalna obsługa. Polecam każdemu.', rating: 5 },
-              { name: 'Robert Kamiński', text: 'Profesjonalne podejście, uczciwy mechanik. W końcu znalazłem kogoś, komu mogę zaufać.', rating: 5 },
-              { name: 'Anna Kowalska', text: 'Szybko rozwiązał problem, który inni nie mogli naprawić. Świetna jakość obsługi.', rating: 5 },
+              {
+                name: "Patryk Betlej",
+                text: "Gorąco polecam! Wymiana hamulców, wymiana oleju, naprawa rozrusznika - wszystko wykonane perfekcyjnie.",
+                rating: 5,
+              },
+              {
+                name: "Łucja Hadam",
+                text: "Wreszcie mechanik, któremu mogę zaufać. Trafna diagnoza, żadnych niepotrzebnych kosztów.",
+                rating: 5,
+              },
+              {
+                name: "Mariusz Jucha",
+                text: "Perfekcyjnie i na czas. Najlepsze podejście do klienta, jakie kiedykolwiek doświadczyłem.",
+                rating: 5,
+              },
+              {
+                name: "Sylwester Nowak",
+                text: "Bardzo dobra, szybka i profesjonalna obsługa. Polecam każdemu.",
+                rating: 5,
+              },
+              {
+                name: "Robert Kamiński",
+                text: "Profesjonalne podejście, uczciwy mechanik. W końcu znalazłem kogoś, komu mogę zaufać.",
+                rating: 5,
+              },
+              {
+                name: "Anna Kowalska",
+                text: "Szybko rozwiązał problem, który inni nie mogli naprawić. Świetna jakość obsługi.",
+                rating: 5,
+              },
             ].map((review, index) => (
               <div
                 key={index}
@@ -482,7 +842,11 @@ export default function Home() {
                 {/* Stars */}
                 <div className="flex gap-1 mb-4">
                   {[...Array(review.rating)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <svg
+                      key={i}
+                      className="w-5 h-5 text-yellow-400 fill-current"
+                      viewBox="0 0 20 20"
+                    >
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
@@ -499,7 +863,9 @@ export default function Home() {
                     {review.name.charAt(0)}
                   </div>
                   <div>
-                    <div className="font-heading font-semibold text-navy">{review.name}</div>
+                    <div className="font-heading font-semibold text-navy">
+                      {review.name}
+                    </div>
                     <div className="text-sm text-navy/60">Klient Google</div>
                   </div>
                 </div>
@@ -514,8 +880,18 @@ export default function Home() {
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-costa-blue to-costa-turquoise text-white font-heading font-bold text-lg rounded-lg shadow-xl hover:shadow-2xl hover:shadow-costa-blue/50 transition-all duration-300 transform hover:-translate-y-1"
             >
               <span>Zobacz wszystkie 55 opinii Google</span>
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </Link>
           </div>
@@ -524,23 +900,42 @@ export default function Home() {
 
       {/* CTA Banner - Bold Design */}
       <section className="relative bg-gradient-to-br from-navy via-navy-dark to-navy text-white py-20 overflow-hidden">
-        {/* Animated Background */}
+        {/* Background Image */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage:
+                "url(/images/car-being-taking-care-workshop.jpg)",
+              filter: "brightness(0.3) contrast(1.1)",
+            }}
+          />
+          <div className="absolute inset-0 bg-navy/80" />
+        </div>
+
+        {/* Animated Pattern Overlay */}
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `
               linear-gradient(45deg, transparent 48%, rgba(52, 152, 219, 0.1) 49%, rgba(52, 152, 219, 0.1) 51%, transparent 52%),
               linear-gradient(-45deg, transparent 48%, rgba(26, 188, 156, 0.1) 49%, rgba(26, 188, 156, 0.1) 51%, transparent 52%)
             `,
-            backgroundSize: '20px 20px',
-          }} />
+              backgroundSize: "20px 20px",
+            }}
+          />
         </div>
 
         {/* Glow Effects */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-costa-blue/20 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '4s' }} />
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-costa-blue/20 rounded-full blur-3xl animate-pulse"
+          style={{ animationDuration: "4s" }}
+        />
 
         <div className="container-custom mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-8 text-white">
               Potrzebujesz Naprawy lub Serwisu Klimatyzacji?
             </h2>
             <p className="text-xl md:text-2xl text-white/90 mb-2">
@@ -556,8 +951,18 @@ export default function Home() {
               href="tel:+48880378675"
               className="group inline-flex items-center gap-4 px-12 py-5 bg-gradient-to-r from-costa-green to-green-600 text-white font-heading font-bold text-xl rounded-xl shadow-2xl hover:shadow-costa-green/50 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
             >
-              <svg className="w-7 h-7 animate-phone-ring" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              <svg
+                className="w-7 h-7 animate-phone-ring"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                />
               </svg>
               <span>ZADZWOŃ: 880 378 675</span>
             </a>
@@ -572,7 +977,9 @@ export default function Home() {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
               <div className="w-12 h-px bg-costa-blue" />
-              <span className="text-costa-blue font-mono text-sm tracking-wider uppercase">Nasza Lokalizacja</span>
+              <span className="text-costa-blue font-mono text-sm tracking-wider uppercase">
+                Nasza Lokalizacja
+              </span>
               <div className="w-12 h-px bg-costa-blue" />
             </div>
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-navy">
@@ -602,52 +1009,104 @@ export default function Home() {
               {[
                 {
                   icon: (
-                    <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <svg
+                      className="w-full h-full"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
                     </svg>
                   ),
-                  title: 'ADRES',
+                  title: "ADRES",
                   content: (
                     <>
-                      <p className="text-navy/80 text-lg">Wandy Siemaszkowej 9</p>
+                      <p className="text-navy/80 text-lg">
+                        Wandy Siemaszkowej 9
+                      </p>
                       <p className="text-navy/80 text-lg">35-602 Rzeszów</p>
-                      <p className="text-navy/60 text-sm mt-2">Plus Code: 223M+5C Rzeszów</p>
+                      <p className="text-navy/60 text-sm mt-2">
+                        Plus Code: 223M+5C Rzeszów
+                      </p>
                     </>
                   ),
                 },
                 {
                   icon: (
-                    <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    <svg
+                      className="w-full h-full"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
                     </svg>
                   ),
-                  title: 'TELEFON',
+                  title: "TELEFON",
                   content: (
                     <>
-                      <a href="tel:+48880378675" className="text-3xl font-heading font-bold text-costa-blue hover:text-costa-turquoise transition-colors">
+                      <a
+                        href="tel:+48880378675"
+                        className="text-3xl font-heading font-bold text-costa-blue hover:text-costa-turquoise transition-colors"
+                      >
                         880 378 675
                       </a>
-                      <p className="text-sm text-navy/60 mt-2">(Kliknij, aby zadzwonić)</p>
+                      <p className="text-sm text-navy/60 mt-2">
+                        (Kliknij, aby zadzwonić)
+                      </p>
                     </>
                   ),
                 },
                 {
                   icon: (
-                    <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <svg
+                      className="w-full h-full"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
                     </svg>
                   ),
-                  title: 'GODZINY OTWARCIA',
+                  title: "GODZINY OTWARCIA",
                   content: (
                     <>
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-navy/80">Poniedziałek - Piątek:</span>
-                        <span className="font-heading font-bold text-costa-green">09:00 - 17:00</span>
+                        <span className="text-navy/80">
+                          Poniedziałek - Piątek:
+                        </span>
+                        <span className="font-heading font-bold text-costa-green">
+                          09:00 - 17:00
+                        </span>
                       </div>
                       <div className="flex items-center justify-between">
-                        <span className="text-navy/80">Sobota - Niedziela:</span>
-                        <span className="font-heading font-bold text-costa-red">Nieczynne</span>
+                        <span className="text-navy/80">
+                          Sobota - Niedziela:
+                        </span>
+                        <span className="font-heading font-bold text-costa-red">
+                          Nieczynne
+                        </span>
                       </div>
                     </>
                   ),
@@ -704,7 +1163,9 @@ export default function Home() {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
               <div className="w-12 h-px bg-costa-blue" />
-              <span className="text-costa-blue font-mono text-sm tracking-wider uppercase">Napisz Do Nas</span>
+              <span className="text-costa-blue font-mono text-sm tracking-wider uppercase">
+                Napisz Do Nas
+              </span>
               <div className="w-12 h-px bg-costa-blue" />
             </div>
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-navy">
@@ -719,7 +1180,10 @@ export default function Home() {
           <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12 border-2 border-costa-blue/10">
             <form className="space-y-6">
               <div>
-                <label htmlFor="name" className="block font-heading font-semibold mb-2 text-navy">
+                <label
+                  htmlFor="name"
+                  className="block font-heading font-semibold mb-2 text-navy"
+                >
                   Imię i nazwisko <span className="text-costa-red">*</span>
                 </label>
                 <input
@@ -734,7 +1198,10 @@ export default function Home() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="phone" className="block font-heading font-semibold mb-2 text-navy">
+                  <label
+                    htmlFor="phone"
+                    className="block font-heading font-semibold mb-2 text-navy"
+                  >
                     Telefon <span className="text-costa-red">*</span>
                   </label>
                   <input
@@ -748,7 +1215,10 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block font-heading font-semibold mb-2 text-navy">
+                  <label
+                    htmlFor="email"
+                    className="block font-heading font-semibold mb-2 text-navy"
+                  >
                     Email <span className="text-costa-red">*</span>
                   </label>
                   <input
@@ -763,7 +1233,10 @@ export default function Home() {
               </div>
 
               <div>
-                <label htmlFor="service" className="block font-heading font-semibold mb-2 text-navy">
+                <label
+                  htmlFor="service"
+                  className="block font-heading font-semibold mb-2 text-navy"
+                >
                   Wybierz usługę
                 </label>
                 <select
@@ -781,7 +1254,10 @@ export default function Home() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block font-heading font-semibold mb-2 text-navy">
+                <label
+                  htmlFor="message"
+                  className="block font-heading font-semibold mb-2 text-navy"
+                >
                   Wiadomość <span className="text-costa-red">*</span>
                 </label>
                 <textarea
@@ -802,8 +1278,13 @@ export default function Home() {
                   required
                   className="mt-1 w-5 h-5 text-costa-blue border-2 border-light-gray-dark rounded focus:ring-costa-blue focus:ring-2"
                 />
-                <label htmlFor="privacy" className="text-sm text-navy/80 leading-relaxed">
-                  Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z polityką prywatności <span className="text-costa-red">*</span>
+                <label
+                  htmlFor="privacy"
+                  className="text-sm text-navy/80 leading-relaxed"
+                >
+                  Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie
+                  z polityką prywatności{" "}
+                  <span className="text-costa-red">*</span>
                 </label>
               </div>
 
@@ -818,5 +1299,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }

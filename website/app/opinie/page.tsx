@@ -111,25 +111,118 @@ export default function ReviewsPage() {
 
   return (
     <>
-      {/* Page Hero */}
-      <section className="bg-navy text-white py-20">
-        <div className="container-custom mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-            Opinie Klientów
-          </h1>
-          <div className="flex items-center justify-center space-x-1 text-yellow-500 text-4xl mb-2">
-            ★★★★★
+      {/* Page Hero - Enhanced with Background Image */}
+      <section className="relative bg-navy text-white min-h-[70vh] flex items-center overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: "url(/images/muscular-car-service-worker-repairing-vehicle.jpg)",
+              filter: "brightness(0.4) contrast(1.1)",
+            }}
+          />
+          {/* Gradient Overlays for Depth */}
+          <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-navy/60" />
+
+          {/* Technical Grid Pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: `
+                linear-gradient(rgba(52, 152, 219, 0.3) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(52, 152, 219, 0.3) 1px, transparent 1px)
+              `,
+                backgroundSize: "60px 60px",
+              }}
+            />
           </div>
-          <p className="text-2xl font-bold mb-2">{averageRating} / 5.0</p>
-          <p className="text-xl text-gray-300 mb-4">
-            Na podstawie {totalReviews} opinii
-          </p>
-          <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
-            <Link href="/" className="hover:text-costa-blue">Home</Link>
-            <span>›</span>
-            <span>Opinie</span>
+
+          {/* Diagonal Accent Lines */}
+          <div className="absolute top-0 right-0 w-full h-full overflow-hidden">
+            <div
+              className="absolute top-20 -right-32 w-96 h-1 bg-gradient-to-r from-transparent via-costa-blue to-transparent transform rotate-45 animate-pulse"
+              style={{ animationDuration: "3s" }}
+            />
           </div>
         </div>
+
+        {/* Main Content */}
+        <div className="container-custom mx-auto px-4 py-20 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            {/* Breadcrumb */}
+            <div className="flex items-center justify-center space-x-2 text-sm text-white/60 mb-6 animate-fade-in">
+              <Link href="/" className="hover:text-costa-blue transition-colors">Home</Link>
+              <span>›</span>
+              <span className="text-costa-blue">Opinie</span>
+            </div>
+
+            {/* Main Heading */}
+            <div className="space-y-4">
+              <div className="flex items-center justify-center gap-3 text-costa-blue font-mono text-sm tracking-wider animate-slide-in-left">
+                <div className="w-12 h-px bg-costa-blue" />
+                <span>ZADOWOLENI KLIENCI</span>
+                <div className="w-12 h-px bg-costa-blue" />
+              </div>
+
+              <h1
+                className="font-heading font-bold leading-tight animate-slide-in-left"
+                style={{ animationDelay: "0.2s" }}
+              >
+                <span className="block text-5xl md:text-6xl lg:text-7xl text-white mb-2">
+                  Opinie Klientów
+                </span>
+                <span className="block text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-costa-blue via-costa-turquoise to-costa-blue bg-clip-text text-transparent animate-gradient-x">
+                  Prawdziwe Opinie
+                </span>
+              </h1>
+
+              {/* Rating Display */}
+              <div
+                className="animate-fade-in"
+                style={{ animationDelay: "0.4s" }}
+              >
+                <div className="flex items-center justify-center space-x-1 text-yellow-400 text-5xl mb-3">
+                  ★★★★★
+                </div>
+                <div className="text-4xl md:text-5xl font-heading font-bold text-white mb-2">
+                  {averageRating} / 5.0
+                </div>
+                <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
+                  Na podstawie{" "}
+                  <span className="text-costa-turquoise font-bold">
+                    {totalReviews} opinii
+                  </span>{" "}
+                  w Google Maps
+                </p>
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div
+              className="mt-8 animate-slide-in-up"
+              style={{ animationDelay: "0.6s" }}
+            >
+              <a
+                href="https://www.google.com/maps/place/Wandy+Siemaszkowej+9,+35-602+Rzesz%C3%B3w"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-costa-blue to-costa-turquoise text-white font-heading font-bold text-lg rounded-lg overflow-hidden shadow-2xl hover:shadow-costa-blue/50 transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+                <svg className="w-6 h-6 relative" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032 s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2 C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z" />
+                </svg>
+                <span className="relative">Zobacz na Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Decorative Element */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-costa-blue to-transparent" />
       </section>
 
       {/* Rating Summary */}

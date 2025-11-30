@@ -1,40 +1,161 @@
-import Link from 'next/link'
-import type { Metadata } from 'next'
+import Link from "next/link";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Usługi Auto Serwisu COSTA – Klimatyzacja, Mechanika, Diagnostyka | Rzeszów',
-  description: 'Pełna oferta: klimatyzacja, naprawy mechaniczne, diagnostyka komputerowa, wymiana opon. Profesjonalny serwis w Rzeszowie. ☎ 880 378 675',
-}
+  title:
+    "Usługi Auto Serwisu COSTA – Klimatyzacja, Mechanika, Diagnostyka | Rzeszów",
+  description:
+    "Pełna oferta: klimatyzacja, naprawy mechaniczne, diagnostyka komputerowa, wymiana opon. Profesjonalny serwis w Rzeszowie. ☎ 880 378 675",
+};
 
 export default function ServicesPage() {
   return (
     <>
-      {/* Page Hero */}
-      <section className="bg-navy text-white py-20">
-        <div className="container-custom mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-            Nasze Usługi
-          </h1>
-          <p className="text-xl text-gray-300 mb-4">
-            Kompleksowa opieka nad Twoim samochodem
-          </p>
-          <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
-            <Link href="/" className="hover:text-costa-blue">Home</Link>
-            <span>›</span>
-            <span>Usługi</span>
+      {/* Page Hero - Enhanced with Background Image */}
+      <section className="relative bg-navy text-white min-h-[70vh] flex items-center overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage:
+                "url(/images/muscular-car-service-worker-repairing-vehicle.jpg)",
+              filter: "brightness(0.4) contrast(1.1)",
+            }}
+          />
+          {/* Gradient Overlays for Depth */}
+          <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-navy/60" />
+
+          {/* Technical Grid Pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: `
+                linear-gradient(rgba(52, 152, 219, 0.3) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(52, 152, 219, 0.3) 1px, transparent 1px)
+              `,
+                backgroundSize: "60px 60px",
+              }}
+            />
+          </div>
+
+          {/* Diagonal Accent Lines */}
+          <div className="absolute top-0 right-0 w-full h-full overflow-hidden">
+            <div
+              className="absolute top-20 -right-32 w-96 h-1 bg-gradient-to-r from-transparent via-costa-blue to-transparent transform rotate-45 animate-pulse"
+              style={{ animationDuration: "3s" }}
+            />
           </div>
         </div>
+
+        {/* Main Content */}
+        <div className="container-custom mx-auto px-4 py-20 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            {/* Breadcrumb */}
+            <div className="flex items-center justify-center space-x-2 text-sm text-white/60 mb-6 animate-fade-in">
+              <Link
+                href="/"
+                className="hover:text-costa-blue transition-colors"
+              >
+                Home
+              </Link>
+              <span>›</span>
+              <span className="text-costa-blue">Usługi</span>
+            </div>
+
+            {/* Main Heading */}
+            <div className="space-y-4">
+              <div className="flex items-center justify-center gap-3 text-costa-blue font-mono text-sm tracking-wider animate-slide-in-left">
+                <div className="w-12 h-px bg-costa-blue" />
+                <span>PROFESJONALNY SERWIS</span>
+                <div className="w-12 h-px bg-costa-blue" />
+              </div>
+
+              <h1
+                className="font-heading font-bold leading-tight animate-slide-in-left"
+                style={{ animationDelay: "0.2s" }}
+              >
+                <span className="block text-5xl md:text-6xl lg:text-7xl text-white mb-2">
+                  Nasze Usługi
+                </span>
+                <span className="block text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-costa-blue via-costa-turquoise to-costa-blue bg-clip-text text-transparent animate-gradient-x">
+                  Kompleksowa Opieka
+                </span>
+              </h1>
+
+              <p
+                className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto animate-fade-in"
+                style={{ animationDelay: "0.4s" }}
+              >
+                nad Twoim samochodem z{" "}
+                <span className="text-costa-turquoise font-bold">
+                  fachową obsługą
+                </span>{" "}
+                i{" "}
+                <span className="text-costa-turquoise font-bold">
+                  najwyższą jakością
+                </span>
+              </p>
+            </div>
+
+            {/* CTA Button */}
+            <div
+              className="mt-8 animate-slide-in-up"
+              style={{ animationDelay: "0.6s" }}
+            >
+              <a
+                href="tel:+48880378675"
+                className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-costa-green to-green-600 text-white font-heading font-bold text-lg rounded-lg overflow-hidden shadow-2xl hover:shadow-costa-green/50 transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+                <svg
+                  className="w-6 h-6 relative animate-phone-ring"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <span className="relative">ZADZWOŃ: 880 378 675</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Decorative Element */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-costa-blue to-transparent" />
       </section>
 
       {/* Service: A/C */}
       <section id="klimatyzacja" className="section-padding bg-white">
         <div className="container-custom mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              <div className="text-costa-blue">
-                <svg className="w-32 h-32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white ring-4 ring-costa-blue/20 group h-96">
+              <div
+                className="absolute inset-0 bg-cover bg-center transform group-hover:scale-105 transition-transform duration-700"
+                style={{
+                  backgroundImage:
+                    "url(/images/car-dashboard-radio-closeup-woman-sets-up-radio-while-driving-car.jpg)",
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-5xl">❄️</span>
+                  <h3 className="text-white font-heading font-bold text-2xl">
+                    Klimatyzacja
+                  </h3>
+                </div>
+                <p className="text-white/90 text-sm">
+                  Profesjonalny serwis i diagnostyka
+                </p>
               </div>
             </div>
 
@@ -43,7 +164,9 @@ export default function ServicesPage() {
                 Serwis Klimatyzacji
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Profesjonalny serwis klimatyzacji dla wszystkich typów pojazdów przy użyciu nowoczesnego sprzętu i wysokiej jakości czynników chłodniczych.
+                Profesjonalny serwis klimatyzacji dla wszystkich typów pojazdów
+                przy użyciu nowoczesnego sprzętu i wysokiej jakości czynników
+                chłodniczych.
               </p>
 
               <div className="space-y-6 mb-8">
@@ -98,11 +221,23 @@ export default function ServicesPage() {
 
               <div className="bg-light-gray p-6 rounded-lg mb-6">
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-costa-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <svg
+                    className="w-6 h-6 text-costa-blue flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
                   </svg>
                   <div>
-                    <p className="font-semibold mb-1">Typowy czas wykonania: 1-2 godziny</p>
+                    <p className="font-semibold mb-1">
+                      Typowy czas wykonania: 1-2 godziny
+                    </p>
                     <p className="text-gray-600">Cena: Zadzwoń po wycenę</p>
                   </div>
                 </div>
@@ -130,7 +265,9 @@ export default function ServicesPage() {
                 Naprawy Mechaniczne
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Fachowe naprawy mechaniczne wszystkich marek i modeli z zastosowaniem wysokiej jakości części i profesjonalnego wykonania.
+                Fachowe naprawy mechaniczne wszystkich marek i modeli z
+                zastosowaniem wysokiej jakości części i profesjonalnego
+                wykonania.
               </p>
 
               <div className="space-y-6 mb-8">
@@ -189,11 +326,23 @@ export default function ServicesPage() {
 
               <div className="bg-white p-6 rounded-lg mb-6">
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-costa-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <svg
+                    className="w-6 h-6 text-costa-blue flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
                   </svg>
                   <div>
-                    <p className="font-semibold mb-1">Czas wykonania: Zależy od zakresu prac</p>
+                    <p className="font-semibold mb-1">
+                      Czas wykonania: Zależy od zakresu prac
+                    </p>
                     <p className="text-gray-600">Cena: Zadzwoń po wycenę</p>
                   </div>
                 </div>
@@ -209,12 +358,25 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center order-1 lg:order-2">
-              <div className="text-costa-blue">
-                <svg className="w-32 h-32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white ring-4 ring-costa-blue/20 group h-96 order-1 lg:order-2">
+              <div
+                className="absolute inset-0 bg-cover bg-center transform group-hover:scale-105 transition-transform duration-700"
+                style={{
+                  backgroundImage:
+                    "url(/images/sten-rademaker-UZUzvJEvKnI-unsplash.jpg",
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-5xl">🔧</span>
+                  <h3 className="text-white font-heading font-bold text-2xl">
+                    Mechanika
+                  </h3>
+                </div>
+                <p className="text-white/90 text-sm">
+                  Nowoczesny sprzęt diagnostyczny
+                </p>
               </div>
             </div>
           </div>
@@ -225,11 +387,25 @@ export default function ServicesPage() {
       <section id="diagnostyka" className="section-padding bg-white">
         <div className="container-custom mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              <div className="text-costa-blue">
-                <svg className="w-32 h-32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white ring-4 ring-costa-blue/20 group h-96">
+              <div
+                className="absolute inset-0 bg-cover bg-center transform group-hover:scale-105 transition-transform duration-700"
+                style={{
+                  backgroundImage:
+                    "url(/images/erik-mclean-hEELt_9YdiU-unsplash.jpg",
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-5xl">💻</span>
+                  <h3 className="text-white font-heading font-bold text-2xl">
+                    Diagnostyka
+                  </h3>
+                </div>
+                <p className="text-white/90 text-sm">
+                  Dbałość o każdy szczegół
+                </p>
               </div>
             </div>
 
@@ -238,7 +414,8 @@ export default function ServicesPage() {
                 Diagnostyka Komputerowa
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Zaawansowana diagnostyka przy użyciu profesjonalnego sprzętu do dokładnej identyfikacji problemów z pojazdem.
+                Zaawansowana diagnostyka przy użyciu profesjonalnego sprzętu do
+                dokładnej identyfikacji problemów z pojazdem.
               </p>
 
               <div className="space-y-6 mb-8">
@@ -284,11 +461,23 @@ export default function ServicesPage() {
 
               <div className="bg-light-gray p-6 rounded-lg mb-6">
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-costa-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <svg
+                    className="w-6 h-6 text-costa-blue flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
                   </svg>
                   <div>
-                    <p className="font-semibold mb-1">Czas diagnostyki: 30-60 minut</p>
+                    <p className="font-semibold mb-1">
+                      Czas diagnostyki: 30-60 minut
+                    </p>
                     <p className="text-gray-600">Cena: Zadzwoń po wycenę</p>
                   </div>
                 </div>
@@ -316,7 +505,8 @@ export default function ServicesPage() {
                 Serwis Opon i Kół
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Kompleksowe usługi związane z oponami i kołami, w tym zmiany sezonowe i wyważanie.
+                Kompleksowe usługi związane z oponami i kołami, w tym zmiany
+                sezonowe i wyważanie.
               </p>
 
               <div className="space-y-6 mb-8">
@@ -373,11 +563,23 @@ export default function ServicesPage() {
 
               <div className="bg-white p-6 rounded-lg mb-6">
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-costa-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <svg
+                    className="w-6 h-6 text-costa-blue flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
                   </svg>
                   <div>
-                    <p className="font-semibold mb-1">Czas wykonania: 30-60 minut</p>
+                    <p className="font-semibold mb-1">
+                      Czas wykonania: 30-60 minut
+                    </p>
                     <p className="text-gray-600">Cena: Zadzwoń po wycenę</p>
                   </div>
                 </div>
@@ -393,11 +595,22 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center order-1 lg:order-2">
-              <div className="text-costa-blue">
-                <svg className="w-32 h-32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white ring-4 ring-costa-blue/20 group h-96 order-1 lg:order-2">
+              <div
+                className="absolute inset-0 bg-cover bg-center transform group-hover:scale-105 transition-transform duration-700"
+                style={{
+                  backgroundImage: "url(/images/pexels-maltelu-2244746.jpg",
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-5xl">🛞</span>
+                  <h3 className="text-white font-heading font-bold text-2xl">
+                    Serwis Opon
+                  </h3>
+                </div>
+                <p className="text-white/90 text-sm">Kompleksowa obsługa kół</p>
               </div>
             </div>
           </div>
@@ -405,18 +618,32 @@ export default function ServicesPage() {
       </section>
 
       {/* Pricing Note */}
-      <section className="section-padding bg-costa-blue text-white">
+      <section className="section-padding bg-gradient-to-r from-costa-blue to-costa-turquoise text-white">
         <div className="container-custom mx-auto text-center">
-          <svg className="w-16 h-16 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <svg
+            className="w-16 h-16 mx-auto mb-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
           </svg>
           <h2 className="text-3xl font-heading font-bold mb-4">
             Informacja o Cenach
           </h2>
           <p className="text-xl max-w-2xl mx-auto mb-8">
-            Każdy samochód jest inny i zapewniamy uczciwe wyceny na podstawie Twoich konkretnych potrzeb. Zadzwoń do nas po dokładną wycenę.
+            Każdy samochód jest inny i zapewniamy uczciwe wyceny na podstawie
+            Twoich konkretnych potrzeb. Zadzwoń do nas po dokładną wycenę.
           </p>
-          <a href="tel:+48880378675" className="btn-call bg-white text-costa-blue hover:bg-gray-100">
+          <a
+            href="tel:+48880378675"
+            className="btn-call bg-white text-costa-blue hover:bg-gray-100"
+          >
             <svg
               className="w-6 h-6 inline-block mr-2"
               fill="none"
@@ -435,5 +662,5 @@ export default function ServicesPage() {
         </div>
       </section>
     </>
-  )
+  );
 }

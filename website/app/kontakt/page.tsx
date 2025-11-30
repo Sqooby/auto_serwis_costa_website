@@ -9,21 +9,127 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      {/* Page Hero */}
-      <section className="bg-navy text-white py-20">
-        <div className="container-custom mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-            Skontaktuj Się z Nami
-          </h1>
-          <p className="text-xl text-gray-300 mb-4">
-            Jesteśmy tu, aby Ci pomóc
-          </p>
-          <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
-            <Link href="/" className="hover:text-costa-blue">Home</Link>
-            <span>›</span>
-            <span>Kontakt</span>
+      {/* Page Hero - Enhanced with Background Image */}
+      <section className="relative bg-navy text-white min-h-[70vh] flex items-center overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: "url(/images/muscular-car-service-worker-repairing-vehicle.jpg)",
+              filter: "brightness(0.4) contrast(1.1)",
+            }}
+          />
+          {/* Gradient Overlays for Depth */}
+          <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-navy/60" />
+
+          {/* Technical Grid Pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: `
+                linear-gradient(rgba(52, 152, 219, 0.3) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(52, 152, 219, 0.3) 1px, transparent 1px)
+              `,
+                backgroundSize: "60px 60px",
+              }}
+            />
+          </div>
+
+          {/* Diagonal Accent Lines */}
+          <div className="absolute top-0 right-0 w-full h-full overflow-hidden">
+            <div
+              className="absolute top-20 -right-32 w-96 h-1 bg-gradient-to-r from-transparent via-costa-blue to-transparent transform rotate-45 animate-pulse"
+              style={{ animationDuration: "3s" }}
+            />
           </div>
         </div>
+
+        {/* Main Content */}
+        <div className="container-custom mx-auto px-4 py-20 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            {/* Breadcrumb */}
+            <div className="flex items-center justify-center space-x-2 text-sm text-white/60 mb-6 animate-fade-in">
+              <Link href="/" className="hover:text-costa-blue transition-colors">Home</Link>
+              <span>›</span>
+              <span className="text-costa-blue">Kontakt</span>
+            </div>
+
+            {/* Main Heading */}
+            <div className="space-y-4">
+              <div className="flex items-center justify-center gap-3 text-costa-blue font-mono text-sm tracking-wider animate-slide-in-left">
+                <div className="w-12 h-px bg-costa-blue" />
+                <span>SKONTAKTUJ SIĘ</span>
+                <div className="w-12 h-px bg-costa-blue" />
+              </div>
+
+              <h1
+                className="font-heading font-bold leading-tight animate-slide-in-left"
+                style={{ animationDelay: "0.2s" }}
+              >
+                <span className="block text-5xl md:text-6xl lg:text-7xl text-white mb-2">
+                  Jesteśmy Tu
+                </span>
+                <span className="block text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-costa-blue via-costa-turquoise to-costa-blue bg-clip-text text-transparent animate-gradient-x">
+                  Aby Ci Pomóc
+                </span>
+              </h1>
+
+              <p
+                className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto animate-fade-in"
+                style={{ animationDelay: "0.4s" }}
+              >
+                Zadzwoń, napisz lub odwiedź nas{" "}
+                <span className="text-costa-turquoise font-bold">
+                  osobiście
+                </span>
+                . Odpowiemy na wszystkie pytania
+              </p>
+            </div>
+
+            {/* Quick Contact Info */}
+            <div
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-8 animate-slide-in-up"
+              style={{ animationDelay: "0.6s" }}
+            >
+              <a
+                href="tel:+48880378675"
+                className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-costa-green to-green-600 text-white font-heading font-bold text-lg rounded-lg overflow-hidden shadow-2xl hover:shadow-costa-green/50 transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+                <svg
+                  className="w-6 h-6 relative animate-phone-ring"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <span className="relative">880 378 675</span>
+              </a>
+
+              <div className="text-white/80 font-mono text-sm">
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span>Wandy Siemaszkowej 9, Rzeszów</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Decorative Element */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-costa-blue to-transparent" />
       </section>
 
       {/* Contact Methods */}
